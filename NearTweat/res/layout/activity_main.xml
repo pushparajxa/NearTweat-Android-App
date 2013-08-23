@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ServerAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EnterServerAddress"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ServerIpTextBox"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/IP_Format" 
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/ClientId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EnterClientId"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ClientIdTextBox"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/SAMPLE_CLIENT_ID" 
+         />
+
+    <Button
+        android:id="@+id/Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Connect"
+        android:onClick="connectMe" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND_STATE_INFO"
+        android:onClick="sendState" />
+
+</LinearLayout>

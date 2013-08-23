@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+       
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startPollActivity"
+            android:text="Polls" />
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:onClick="startAttachment"
+            android:text="Attachment" />
+
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/tweatViewID"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scrollbars="vertical" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/tweatID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+     
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="sendTweat"
+            android:text="Tweat" />
+    </LinearLayout>
+
+</LinearLayout>

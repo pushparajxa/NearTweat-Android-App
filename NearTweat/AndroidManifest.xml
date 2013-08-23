@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ist.neartweat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name="com.ist.neartweat.service.NetworkService" />
+		 <service android:name="com.ist.neartweat.wifidirect.service.SimWifiP2pService" />
+        <activity
+            android:name="com.ist.neartweat.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ist.neartweat.SecondActivity"
+            android:label="@string/title_activity_second" >
+        </activity>
+        <activity
+            android:name="com.ist.neartweat.Attachment"
+            android:label="@string/title_Attachment" >
+        </activity>
+        <activity
+            android:name="com.ist.neartweat.TweatDetailsActivity"
+            android:label="@string/title_activity_tweat_details" >
+        </activity>
+        <activity
+            android:name="com.ist.neartweat.TweatActivity"
+            android:label="@string/title_activity_tweat" >
+        </activity>
+        <activity
+            android:name="com.ist.neartweat.PollActivity"
+            android:label="@string/title_activity_poll" >
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NearTweat</string>
+    <string name="action_settings">Settings</string>
+    <string name="EnterServerAddress">Enter ServerIp and Port</string>
+    <string name="IP_Format">192.168.0.15:9876</string>
+    <string name="EnterClientId">Enter Client ID</string>
+    <string name="SAMPLE_CLIENT_ID">pushparaj1</string>
+    <string name="Connect">Connect</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tweat_details">TweatDetailsActivity</string>
+    <string name="title_activity_tweat">TweatActivity</string>
+    <string name="title_activity_poll">PollActivity</string>
+	<string name="title_Attachment">Attachment</string>
+</resources>
